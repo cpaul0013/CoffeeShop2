@@ -1,0 +1,12 @@
+﻿@model List<Customer>
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div>
+    @foreach (Customer c in Model)
+    {
+        <p>@c.fname @c.lname Favorite Drink: @c.FaveDrink Birthday: @c.birthday </p>
+
+    }
+</div>
